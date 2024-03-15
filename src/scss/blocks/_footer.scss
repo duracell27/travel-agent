@@ -1,14 +1,29 @@
 .footer {
-	background-color: rgb(62, 62, 62);
-	padding: 50px 0;
-	font-size: 32px;
-    color: #fff;
-
-	h1 {
-		font-size: 32px;
+	padding: 80px 0;
+	background-color: var(--text-color);
+	color: var(--page-bg);
+	a{
+		color: var(--page-bg);
 	}
+}
 
-	@media (max-width: 1200px) {
-		font-size: 26px;
-	}
+.footer__row {
+	display: grid;
+	gap: 128px;
+	grid-template-columns: 1fr 1fr;
+	align-items: start;
+}
+.footer__copyright {
+	display: grid;
+	gap: 24px;
+	// max-width: 300px;
+}
+.footer__copyright__text{
+	max-width: 300px;
+}
+.footer__nav {
+	display: grid;
+	gap: 40px;
+	align-items: start;
+	grid-template-columns: 1fr 1fr;
 }

@@ -1,0 +1,46 @@
+.subscribe {
+  padding: 80px 0;
+  background: var(--accent);
+  color: #fff;
+   overflow: hidden;
+}
+
+.subscribe__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-left: 180px;
+  position: relative;
+  
+  &:before {
+    content: '';
+    left: -80px;
+    top: -96px;
+    width: 236px;
+    height: 273px;
+    position: absolute;
+    background-image: url('./../img/subscribe/subscribe-pin-bg.svg');
+    background-repeat: no-repeat;
+  }
+}
+.subscribe__desc {
+    display: grid;
+    gap: 4px;
+}
+.subscribe__form {
+    flex-grow: 1;
+}
+
+.subscribe__title {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+
+}
+.subscribe__text {
+    font-size: 20px;
+    color: #f0f0f0;
+    font-weight: 500;
+    line-height: 1;
+}
