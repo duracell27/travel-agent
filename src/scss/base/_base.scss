@@ -1,44 +1,63 @@
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	background-color: var(--page-bg);
-	color: var(--text-color);
-    font-family: var(--font-main);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	color: var(--text-color);
+  background-color: var(--page-bg);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
 }
 
-img{
-	display: block;
+img {
+  display: block;
 }
 
 .title-1 {
-	font-size: 72px;
-	color: var(--text-color);
-	font-weight: 700;
-	line-height: normal;
-	&--decor{
-		position: relative;
-	}
-	&--decor::after{
-		content: '';
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		z-index: -1;
-		width: 268px;
-		height: 24px;
-		background-image: url('./../img/discover/underline.svg');
-		background-repeat: no-repeat;
-	}
+  font-size: 72px;
+  color: var(--text-color);
+  font-weight: 700;
+  line-height: normal;
+  &--decor {
+    position: relative;
+  }
+  &--decor::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 268px;
+    height: 24px;
+    background-image: url("./../img/discover/underline.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .text {
-	font-size: 18px;
-	color: var(--text-muted);
-	font-weight: 500;
-	line-height: 1.5;
+  font-size: 18px;
+  color: var(--text-muted);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.title-4 {
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  &.muted {
+    color: #9e9e9e;
+  }
+}
+
+.title-3 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: normal;
+}
+.muted {
+  color: var(--text-muted);
 }
