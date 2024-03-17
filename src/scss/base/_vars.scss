@@ -10,12 +10,33 @@
 	--text-muted: #909090;
 	--accent: #35aff4;
 
-    --laptop-size: 1199px;
-	--tablet-size: 959px;
-	--mobile-size: 599px;
+    // --laptop-size: 1199px;
+	// --tablet-size: 767px;
+	--mobile-size: 767px;
 }
 
 .dark {
     --page-bg: #252526;
     --text-color: #fff;
+}
+
+@mixin mediaMobile {
+	@media (max-width: 767px) {
+        @content;
+    }
+
+}
+
+@mixin mediaLaptop {
+	@media (max-width: 1439px) {
+        @content;
+    }
+
+}
+
+@mixin mediaSmalLaptop {
+	@media (max-width: 1023px) {
+        @content;
+    }
+
 }

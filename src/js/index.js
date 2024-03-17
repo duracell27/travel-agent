@@ -1,5 +1,5 @@
-// import mobileNav from './modules/mobile-nav.js';
-// mobileNav();
+import mobileNav from './modules/mobile-nav.js';
+mobileNav();
 import { easepick } from "@easepick/bundle";
 import autoComplete from "@tarekraafat/autocomplete.js";
 import Swiper from "swiper/bundle";

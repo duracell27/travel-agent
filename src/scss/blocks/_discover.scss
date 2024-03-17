@@ -1,36 +1,67 @@
 .discover {
-    padding: 60px 0;
+  padding: 60px 0;
+  @include mediaLaptop {
+    padding: 30px 0;
+  }
 }
 .discover__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  @include mediaSmalLaptop {
+    grid-template-columns: 1fr;
+  }
+  @include mediaLaptop {
+    gap: 40px;
+  }
 }
 .discover__desc {
 }
 .discover__title {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .discover__text {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .discover__form {
 }
 .discover__picture {
-    position: relative;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  @include mediaSmalLaptop {
+    grid-row: -1 / 1;
+  }
 }
-.discover__picture-hint{
-position: absolute;
-top: 90px;
-left: 40px;
-z-index: 2;
-
+.discover__picture-hint {
+  position: absolute;
+  top: 90px;
+  left: 40px;
+  z-index: 2;
+  @include mediaLaptop {
+    top: 40px;
+    left: 20px;
+  }
+  @include mediaLaptop {
+    top: 30px;
+    left: 0px;
+  }
 }
 .discover__picture-scroll {
-    position: absolute;
-    right: 15px;
-    bottom: 20px;
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+
+  @include mediaLaptop {
+    right: 0;
+    bottom: 0;
+  }
+  @include mediaMobile{
+    width: 30%;
+  }
 }
