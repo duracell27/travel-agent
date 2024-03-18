@@ -1,4 +1,4 @@
-import mobileNav from './modules/mobile-nav.js';
+import mobileNav from "./modules/mobile-nav.js";
 mobileNav();
 import { easepick } from "@easepick/bundle";
 import autoComplete from "@tarekraafat/autocomplete.js";
@@ -32,8 +32,19 @@ const picker = new easepick.create({
 
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 32,
+
+  breakpoints: {
+    425: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 32,
+    },
+  },
 
   // If we need pagination
 
@@ -52,17 +63,20 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal(".header, .partners, .popular__title", {
-  origin: "top"
+  origin: "top",
 });
 
 ScrollReveal().reveal(".discover__picture-hint, .discover__title", {
-  origin: "left"
+  origin: "left",
 });
 
-ScrollReveal().reveal(".discover__picture-scroll, .discover__title, .popular__controls", {
-  origin: "right"
-});
+ScrollReveal().reveal(
+  ".discover__picture-scroll, .discover__title, .popular__controls",
+  {
+    origin: "right",
+  }
+);
 
 ScrollReveal().reveal(".discover__form, .discover__picture-img", {
-  origin: "bottom"
+  origin: "bottom",
 });

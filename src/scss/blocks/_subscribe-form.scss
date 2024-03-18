@@ -1,6 +1,9 @@
 .subscribe-form {
   display: flex;
   gap: 12px;
+  @include mediaMobileS{
+    flex-direction: column;
+  }
 }
 .subscribe-form__input {
   padding: 12px;

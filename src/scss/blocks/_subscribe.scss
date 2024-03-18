@@ -3,6 +3,9 @@
   background: var(--accent);
   color: #fff;
    overflow: hidden;
+   @include mediaLaptop{
+    padding: 40px 0;
+   }
 }
 
 .subscribe__row {
@@ -12,6 +15,11 @@
   gap: 30px;
   padding-left: 180px;
   position: relative;
+  @include mediaSmalLaptop{
+    flex-direction: column;
+    padding-left: 0;
+    text-align: center;
+  }
   
   &:before {
     content: '';
@@ -22,6 +30,9 @@
     position: absolute;
     background-image: url('./../img/subscribe/subscribe-pin-bg.svg');
     background-repeat: no-repeat;
+    @include mediaMobile{
+      display: none;
+    }
   }
 }
 .subscribe__desc {
@@ -30,12 +41,20 @@
 }
 .subscribe__form {
     flex-grow: 1;
+    // min-width: 400px;
+    @include mediaMobile{
+      width: 100%;
+      min-width: none;
+    }
 }
 
 .subscribe__title {
     font-size: 28px;
     font-weight: 500;
     line-height: 1.5;
+    @include mediaMobile{
+      font-size: 20px;
+    }
 
 }
 .subscribe__text {
@@ -43,4 +62,7 @@
     color: #f0f0f0;
     font-weight: 500;
     line-height: 1;
+    @include mediaMobile{
+      font-size: 16px;
+    }
 }

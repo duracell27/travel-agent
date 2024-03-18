@@ -5,6 +5,9 @@
 	a{
 		color: var(--page-bg);
 	}
+	@include mediaMobile{
+		padding: 40px 0;
+	}
 }
 
 .footer__row {
@@ -12,6 +15,10 @@
 	gap: 128px;
 	grid-template-columns: 1fr 1fr;
 	align-items: start;
+	@include mediaMobile{
+		grid-template-columns: 1fr;
+		gap: 60px;
+	}
 }
 .footer__copyright {
 	display: grid;
